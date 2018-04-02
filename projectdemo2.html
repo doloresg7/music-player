@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="projectdemo2.css" type="text/css" rel="stylesheet"/>
+<script src="projectdemo2.js"></script>
+  <title> Demo trying to make a player</title>
+</head>
+<body onload>
+<div class="audio-player">
+  <div class="logo">
+    <img src="audioicon.png" width="100" height="100"/>
+  </div>
+  <div class="player" id="player">
+  </div>
+  <select id="artist">
+    <option value="johnnewman"> John Newman </option>
+    <option value="ladygaga"> Lady Gaga </option>
+    <option value= "katyperry"> Katy Perry </option>
+    <option value="zhu"> Zhu </option>
+  </select>
+  <p id="title">
+  </p>
+  <div>
+  <input id="songSlider" class="song-slider" type="range" min="0" max="" step="1" onchange="songSlider()"/>
+</div>
+<input type="button" value="play" onclick="play()"/>
+<input type="button" value="next" onclick="next(event)"/>
+  </body>
+</html>
